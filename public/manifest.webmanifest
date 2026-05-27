@@ -1,0 +1,12 @@
+{
+  "name": "SP-Projects",
+  "short_name": "SP-Projects",
+  "description": "Dakwerken, gevelwerken en totaalrenovatie in Gent en Oost-Vlaanderen.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ed1c24",
+  "icons": [
+    { "src": "/img/logo-black.png", "sizes": "any", "type": "image/png" }
+  ]
+}
