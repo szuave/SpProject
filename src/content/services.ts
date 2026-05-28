@@ -15,7 +15,7 @@ export const services: Service[] = [
     title: "Platte daken",
     tagline: "Roofing of EPDM met een levensduur tot 50 jaar.",
     category: "Dakwerken",
-    image: "/img/project-1.png",
+    image: "/img/project-2.png",
     intro:
       "Een plat dak is meer dan een esthetische keuze. Met 15+ jaar ervaring plaatsen wij platte daken in hoogstaande kwaliteitsmaterialen — roofing of EPDM — die decennialang meegaan.",
     blocks: [
@@ -40,7 +40,7 @@ export const services: Service[] = [
     title: "Hellende daken",
     tagline: "Aanleg, renovatie en onderhoud van hellende daken.",
     category: "Dakwerken",
-    image: "/img/project-2.png",
+    image: "/img/zolderwerken.jpg",
     intro:
       "SP-Projects is gespecialiseerd in de aanleg, renovatie en het onderhoud van hellende daken. Onze ervaren vakmensen garanderen duurzame en esthetisch aantrekkelijke dakoplossingen.",
     blocks: [
@@ -65,7 +65,7 @@ export const services: Service[] = [
     title: "Crepi",
     tagline: "Hoogwaardige gevelbepleistering, ook op isolatie.",
     category: "Gevelwerken",
-    image: "/img/gevel-1.webp",
+    image: "/img/project-1.png",
     intro:
       "SP-Projects is gespecialiseerd in het aanbrengen van hoogwaardige gevelbepleistering, ook wel crepi genoemd — voor een strakke, moderne en duurzame gevel.",
     blocks: [
@@ -90,7 +90,7 @@ export const services: Service[] = [
     title: "Steenstrips",
     tagline: "De authentieke baksteenlook, zonder ruimteverlies.",
     category: "Gevelwerken",
-    image: "/img/gevel-3.webp",
+    image: "/img/renovatie.jpeg",
     intro:
       "De authentieke uitstraling van baksteen, zonder verlies van ruimte? Dan zijn steenstrips de perfecte keuze voor uw gevelafwerking.",
     blocks: [
@@ -115,7 +115,7 @@ export const services: Service[] = [
     title: "Gevelsteen",
     tagline: "Tijdloze, stijlvolle gevels die decennia meegaan.",
     category: "Gevelwerken",
-    image: "/img/gevel-4.webp",
+    image: "/img/project-4.png",
     intro:
       "SP-Projects biedt een uitgebreide keuze aan gevelstenen om uw woning of gebouw een tijdloze, stijlvolle uitstraling te geven.",
     blocks: [
@@ -140,7 +140,7 @@ export const services: Service[] = [
     title: "Algemene renovatiewerken",
     tagline: "Vloeren, badkamers, zolder en totaalrenovatie.",
     category: "Renovatie",
-    image: "/img/renovatie.jpeg",
+    image: "/img/project-3.png",
     intro:
       "Plant u een uitgebreid renovatieproject? SP-Projects is dé referentie voor renovatiewerken in Gent en omgeving — één partner voor uw volledige project.",
     blocks: [

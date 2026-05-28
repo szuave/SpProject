@@ -46,6 +46,15 @@ export function ContactForm() {
 
   return (
     <form onSubmit={onSubmit} className="space-y-5" noValidate>
+      {/* Honeypot — verborgen voor mensen, bots vullen het in */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="absolute left-[-9999px] h-0 w-0 opacity-0"
+      />
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="naam" className={labelBase}>Naam</label>

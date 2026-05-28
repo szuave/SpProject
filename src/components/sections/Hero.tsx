@@ -48,7 +48,7 @@ export function Hero() {
             <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-2 text-[14px] text-ink-2">
               {[
                 "20+ jaar ervaring",
-                "100% maatwerk",
+                "Erkend aannemer",
                 "Gratis 3D-visualisatie",
                 "Eén aanspreekpunt",
               ].map((p) => (

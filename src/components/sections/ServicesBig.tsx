@@ -18,7 +18,7 @@ const categories = [
   },
   {
     title: "Gevelwerken",
-    image: "/img/gevel-1.webp",
+    image: "/img/project-1.png",
     intro: "Crepi, steenstrips en gevelsteen — voor een tijdloze, isolerende gevel.",
     items: [
       { label: "Crepi", href: "/diensten/crepi" },

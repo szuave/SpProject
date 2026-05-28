@@ -8,7 +8,9 @@ export const site = {
     "SP-Projects is uw betrouwbare partner voor dakwerken, gevelwerken en totaalrenovatie in Gent en Oost-Vlaanderen. Meer dan 20 jaar vakmanschap, maatwerk en kwaliteit.",
   shortDescription:
     "Uw partner voor dakwerken, gevelwerken en totaalrenovatie in Gent en Oost-Vlaanderen.",
+  credential: "Erkend aannemer voor verbouwing en renovatie",
   contact: {
+    person: "Ajdis Spahija",
     phone: "0486 20 12 79",
     phoneHref: "tel:+32486201279",
     phone2: "0485 61 55 58",
@@ -56,6 +58,7 @@ export const nav = {
       ],
     },
     { label: "Realisaties", href: "/realisaties" },
+    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ],
 } as const;

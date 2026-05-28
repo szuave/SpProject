@@ -10,6 +10,8 @@ import { CallToAction } from "@/components/sections/CallToAction";
 import { JsonLd } from "@/lib/jsonLd";
 import { buildMetadata } from "@/lib/seo";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = buildMetadata({
   title: "Dakwerken & Gevelwerken in Gent",
   description:

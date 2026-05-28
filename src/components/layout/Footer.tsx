@@ -12,7 +12,7 @@ export function Footer() {
     <footer className="bg-ink text-white/70">
       <Container className="py-16 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-4">
             <Link href="/" aria-label="SP-Projects — home" className="inline-flex">
               <Image
                 src="/img/logo.png"
@@ -50,7 +50,18 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-2">
+            <h3 className="text-white text-[12px] font-bold uppercase tracking-[0.16em] mb-5">
+              Bedrijf
+            </h3>
+            <ul className="space-y-3 text-[15px]">
+              <li><Link href="/realisaties" className="hover:text-white transition-colors">Realisaties</Link></li>
+              <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact</Link></li>
+            </ul>
+          </div>
+
+          <div className="lg:col-span-3">
             <h3 className="text-white text-[12px] font-bold uppercase tracking-[0.16em] mb-5">
               Contact
             </h3>
@@ -91,7 +102,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <Container className="py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-[12.5px] text-white/50">
-          <div>© {year} SP-Projects · BTW {site.contact.vat}</div>
+          <div>© {year} SP-Projects · BTW {site.contact.vat} · {site.credential}</div>
           <div>Dakwerken · Gevelwerken · Totaalrenovatie in Gent &amp; Oost-Vlaanderen</div>
         </Container>
       </div>

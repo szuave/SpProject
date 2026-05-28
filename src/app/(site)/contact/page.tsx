@@ -61,6 +61,7 @@ export default function ContactPage() {
                     <a href={site.contact.phone2Href} className="text-ink hover:text-brand-600">
                       {site.contact.phone2}
                     </a>
+                    <div className="text-sm text-ink-3 mt-0.5">{site.contact.person}</div>
                   </div>
                 </li>
                 <li className="flex items-start gap-4">

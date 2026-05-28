@@ -5,12 +5,19 @@ type Args = {
   title?: string;
   description?: string;
   path?: string;
+  image?: string | null;
 };
 
-export function buildMetadata({ title, description, path = "/" }: Args = {}): Metadata {
+function absolute(src?: string | null) {
+  if (!src) return `${site.url}/img/project-2.png`;
+  return src.startsWith("http") ? src : `${site.url}${src}`;
+}
+
+export function buildMetadata({ title, description, path = "/", image }: Args = {}): Metadata {
   const fullTitle = title ? `${title} | ${site.name}` : `${site.name} — Dakwerken & Gevelwerken in Gent`;
   const desc = description ?? site.description;
   const url = `${site.url}${path === "/" ? "" : path}`;
+  const ogImage = absolute(image);
 
   return {
     title: fullTitle,
@@ -23,13 +30,13 @@ export function buildMetadata({ title, description, path = "/" }: Args = {}): Me
       url,
       title: fullTitle,
       description: desc,
-      images: [{ url: `${site.url}/img/project-2.png`, width: 768, height: 896 }],
+      images: [{ url: ogImage }],
     },
     twitter: {
       card: "summary_large_image",
       title: fullTitle,
       description: desc,
-      images: [`${site.url}/img/project-2.png`],
+      images: [ogImage],
     },
     robots: { index: true, follow: true },
   };

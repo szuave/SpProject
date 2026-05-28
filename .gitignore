@@ -5,3 +5,13 @@ out
 .env*.local
 .DS_Store
 *.log
+
+# Local SQLite database (auto-created + seeded on first run)
+/data
+*.db
+*.db-shm
+*.db-wal
+
+# Door klanten geüploade afbeeldingen (runtime)
+/public/uploads/*
+!/public/uploads/.gitkeep

@@ -1,11 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins, Archivo } from "next/font/google";
 import "./globals.css";
-import { TopRibbon } from "@/components/layout/TopRibbon";
-import { Nav } from "@/components/layout/Nav";
-import { Footer } from "@/components/layout/Footer";
-import { JsonLd } from "@/lib/jsonLd";
-import { localBusinessJsonLd, buildMetadata } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { site } from "@/lib/site";
 
 const poppins = Poppins({
@@ -43,15 +39,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nl-BE" className={`${poppins.variable} ${archivo.variable} antialiased`}>
-      <body className="min-h-dvh flex flex-col bg-surface text-ink">
-        <JsonLd data={localBusinessJsonLd()} />
-        <TopRibbon />
-        <Nav />
-        <main id="main" className="flex-1">
-          {children}
-        </main>
-        <Footer />
-      </body>
+      <body className="min-h-dvh flex flex-col bg-surface text-ink">{children}</body>
     </html>
   );
 }
