@@ -2,6 +2,7 @@ import "server-only";
 import Database from "better-sqlite3";
 import { existsSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
+import { DATA_DIR } from "@/lib/storage";
 import {
   SEED_REALISATIES,
   SEED_BLOG_POSTS,
@@ -79,10 +80,9 @@ function nowIso() {
 export function getDb(): Database.Database {
   if (_db) return _db;
 
-  const dir = join(process.cwd(), "data");
-  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  if (!existsSync(DATA_DIR)) mkdirSync(DATA_DIR, { recursive: true });
 
-  const db = new Database(join(dir, "sp.db"));
+  const db = new Database(join(DATA_DIR, "sp.db"));
   db.pragma("journal_mode = WAL");
   db.pragma("foreign_keys = ON");
 

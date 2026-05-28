@@ -6,12 +6,9 @@ out
 .DS_Store
 *.log
 
-# Local SQLite database (auto-created + seeded on first run)
+# Persistente opslag (DATA_DIR): SQLite-database + geüploade foto's.
+# Lokaal = ./data, op Railway = je volume-mountpad.
 /data
 *.db
 *.db-shm
 *.db-wal
-
-# Door klanten geüploade afbeeldingen (runtime)
-/public/uploads/*
-!/public/uploads/.gitkeep

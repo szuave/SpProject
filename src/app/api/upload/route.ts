@@ -4,6 +4,7 @@ import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { randomBytes } from "node:crypto";
 import { getSession } from "@/lib/auth";
+import { UPLOADS_DIR } from "@/lib/storage";
 
 export const runtime = "nodejs";
 
@@ -33,8 +34,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Geen bestanden ontvangen." }, { status: 400 });
   }
 
-  const dir = join(process.cwd(), "public", "uploads");
-  if (!existsSync(dir)) await mkdir(dir, { recursive: true });
+  if (!existsSync(UPLOADS_DIR)) await mkdir(UPLOADS_DIR, { recursive: true });
 
   const urls: string[] = [];
   for (const file of files) {
@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     }
     const buffer = Buffer.from(await file.arrayBuffer());
     const name = `${Date.now()}-${randomBytes(5).toString("hex")}.${ext}`;
-    await writeFile(join(dir, name), buffer);
+    await writeFile(join(UPLOADS_DIR, name), buffer);
     urls.push(`/uploads/${name}`);
   }
 
